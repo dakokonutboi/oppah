@@ -6,7 +6,8 @@ trap "rm -f $fichtemp" 0 1 2 5 15
 $DIALOG --clear --title "Oppah toolbox - $VERSION" \
 	--menu "Choose a tool :" 20 75 10 \
 	 "sh updater.sh" "Mettez a jour votre version d'oppah" \
-	 "python passwordmanager.py" "Un generateur de mots de passe" 2> $fichtemp
+	 "python passwordmanager.py" "Un generateur de mots de passe" \
+	 "sh install_linux_package.sh" "Installez un paquet Unix" 2> $fichtemp
 valret=$?
 choix=`cat $fichtemp`
 case $valret in
