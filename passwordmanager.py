@@ -2,6 +2,8 @@ import random
 import string
 import os
 
+print("By yaya7211")
+
 def PassGen():
     char=str(input("Which char do you want to use?\n> "))
     taille=int(input("How many chars?\n> "))
