@@ -4,7 +4,7 @@ VERSION=$(head -n 1 version.txt)
  fichtemp=`tempfile 2>/dev/null` || fichtemp=/tmp/test$$
 trap "rm -f $fichtemp" 0 1 2 5 15
 $DIALOG --clear --title "Oppah toolbox - $VERSION" \
-	--menu "Choose a tool :" 20 51 4 \
+	--menu "Choose a tool :" 20 65 4 \
 	 "sh updater.sh" "Mettez a jour votre version d'oppah" \
 	 "python passwordmanager.py" "Un generateur de mots de passe" 2> $fichtemp
 valret=$?
