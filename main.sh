@@ -9,7 +9,7 @@ $DIALOG --clear --title "Oppah toolbox" \
 valret=$?
 choix=`cat $fichtemp`
 case $valret in
- 0)	sh $choix; py $choix;;
+ 0)	sh $choix; python $choix;;
  1) 	echo "Appuyé sur Annuler.";;
 255) 	echo "Appuyé sur Echap.";;
 esac
